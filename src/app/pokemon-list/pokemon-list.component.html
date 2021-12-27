@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap justify-content-center">
+  <a href="https://beacons.page/alanadias" target="_blanck" class="my-5 text-center" ><img src="assets/img/logo.gif" alt="" class="rounded-circle w-50"></a>
+</div>
+
+<div class="container-fluid d-flex flex-wrap justify-content-center">
+  <app-pokemon-card *ngFor = "let cadaPok of pokemons.results; index as i" [pokemon] = 'cadaPok.name' [numero] = "i + 1"> </app-pokemon-card>
+</div>
+
+
